@@ -13,4 +13,4 @@ elemen semantik, teks, daftar, tautan, dan gambar.
 - Perbaikan yang dilakukan: [membuat list "ul"]
 - Hasil validasi akhir: [Membut website profil mahasiswa]
 ## GitHub Pages
-URL: [https://github.com/053RasyaPanji/2622500053-PWD-SI1J-2627O/tree/main/pertemuan-02]
+URL: [https://053rasyapanji.github.io/2622500053-PWD-SI1J-2627O/pertemuan-02/]
