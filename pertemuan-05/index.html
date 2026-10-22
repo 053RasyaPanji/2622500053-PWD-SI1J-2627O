@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="Id">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Mahasiswa</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Profile Mahasiswa</h1>
+        <div class="header-top">
+            <h1>Profile Mahasiswa</h1>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka navigasi" aria-controls="navMenu"
+                aria-expanded="false"> &#9776;
+            </button>
+        </div>
+
         <nav>
-            <ul>
+            <ul id="navMenu"> 
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#about">Tentang</a></li>
                 <li><a href="#contact">Kontak</a></li>
@@ -20,7 +29,8 @@
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya Rasya Panji Gustiansyah, dengan NIM 2622500053. Saya sedang mempelajari Pemrograman Web Dasar.</p>
+            <p>Halo, saya Rasya Panji Gustiansyah, dengan NIM 2622500053. Saya sedang mempelajari Pemrograman Web Dasar.
+            </p>
             <img src="img/foto-profil.jpg.jpeg" width="100" height="140" alt="Foto profil Nama Mahasiswa">
         </section>
 
@@ -45,53 +55,31 @@
             <form action="index.html" method="post">
                 <div class="form.group">
                     <label for="nama">Nama Lengkap</label><br>
-                    <input class="input-form"
-                           type="text"
-                           id="nama"
-                           name="nama"
-                           placeholder="Masukkan nama lengkap"
-                           minlength="3"
-                           maxlength="50"
-                           required>
+                    <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"
+                        minlength="3" maxlength="50" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label><br>
-                    <input class="input-form"
-                           type="email"
-                           id="email"
-                           name="email"
-                           placeholder="nama@gmail.com"
-                           required>
+                    <input class="input-form" type="email" id="email" name="email" placeholder="nama@gmail.com"
+                        required>
                 </div>
 
                 <div class="form-group">
                     <label for="semester">Semester</label><br>
-                    <input class="input-form"
-                           type="number"
-                           id="semester"
-                           name="semester"
-                           min="1"
-                           max="14"
-                           required>
+                    <input class="input-form" type="number" id="semester" name="semester" min="1" max="14" required>
                 </div>
 
                 <div class="form-group">
                     <label for="tanggal">Tanggal Kunjungan</label><br>
-                    <input class="input-form"
-                           type="date"
-                           id="tanggal"
-                           name="tanggal"
-                           required>
+                    <input class="input-form" type="date" id="tanggal" name="tanggal" required>
                 </div>
 
                 <div class="form-group">
                     <p>Jenis Pesan</p>
-                    <input type="radio" id="pertanyaan" name="jenis_pesan"
-                           value="pertanyaan" required>
+                    <input type="radio" id="pertanyaan" name="jenis_pesan" value="pertanyaan" required>
                     <label for="pertanyaan">Pertanyaan</label>
-                    <input type="radio" id="saran" name="jenis_pesan"
-                           value="saran">
+                    <input type="radio" id="saran" name="jenis_pesan" value="saran">
                     <label for="saran">Saran</label>
                 </div>
 
@@ -114,15 +102,12 @@
 
                 <div class="form-group">
                     <label for="pesan">Pesan</label><br>
-                    <textarea class="input-form"
-                              id="pesan"
-                              name="pesan"
-                              maxlength="400"
-                              placeholder="Tulis pesan anda"
-                              required></textarea>
+                    <textarea class="input-form" id="pesan" name="pesan" maxlength="400" placeholder="Tulis pesan anda"
+                        required></textarea>
                 </div>
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
+                <p id="formFeedback"></p> 
             </form>
         </section>
     </main>
@@ -130,6 +115,7 @@
     <footer>
         <p>&copy; 2026 Rasya Panji Gustiansyah [2622500053]</p>
     </footer>
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
+
 </html>
