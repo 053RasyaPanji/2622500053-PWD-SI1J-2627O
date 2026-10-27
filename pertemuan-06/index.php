@@ -16,6 +16,14 @@ $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa"; 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "053RasyaPanji";
+// Bagian 3: Percabangan if-elseif-else 
+if ($semester < 3) { 
+  $keteranganSemester = "Semester awal"; 
+} elseif ($semester <= 6) { 
+  $keteranganSemester = "Semester menengah"; 
+} else { 
+  $keteranganSemester = "Semester akhir"; 
+} 
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -61,6 +69,7 @@ const PROFIL_GITHUB = "053RasyaPanji";
                 <h3>Profil Singkat</h3>
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p> 
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p> 
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p> 
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
 
                 <h3>Target Belajar</h3>
