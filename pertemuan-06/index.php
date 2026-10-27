@@ -86,7 +86,10 @@ switch ($programStudi) {
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
+                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan;
+                                        ?></p>
                 <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
                     <?php
@@ -114,6 +117,16 @@ switch ($programStudi) {
                     }
                     ?>
                 </ol>
+                <h3>Semester (Perulangan while):</h3>
+                <ol>
+                    <?php
+                    $nomorSemester = 1;
+                    while ($nomorSemester <= 3) {
+                        echo "<li>Semester " . $nomorSemester . "</li>";
+                        $nomorSemester++; // operator penugasan 
+                    }
+                    ?>
+                </ol>
             </article>
         </section>
 
@@ -123,7 +136,7 @@ switch ($programStudi) {
                 Kunjungi
                 <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
             </p>
-            <form action="index.html" method="post">
+            <form id="contactForm" action="index.php" method="get" novalidate> 
                 <div class="form.group">
                     <label for="nama">Nama Lengkap</label><br>
                     <input class="input-form" type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"
@@ -184,7 +197,7 @@ switch ($programStudi) {
     </main>
 
     <footer>
-        <p>&copy; 2026 Rasya Panji Gustiansyah [2622500053]</p>
+        <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
     </footer>
     <script src="script.js"></script>
 </body>
