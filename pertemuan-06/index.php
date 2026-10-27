@@ -27,16 +27,16 @@ if ($semester < 3) {
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik 
 Informatika" : "Lainnya");
 // Bagian 4: Percabangan switch-case-default 
-switch ($programStudi) { 
-  case "SI": 
-$fokusProgramStudi = "Sistem informasi dan proses bisnis"; 
-    break; 
-  case "TI": 
-    $fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak"; 
-    break; 
-  default: 
-    $fokusProgramStudi = "Belum ditentukan"; 
-} 
+switch ($programStudi) {
+    case "SI":
+        $fokusProgramStudi = "Sistem informasi dan proses bisnis";
+        break;
+    case "TI":
+        $fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak";
+        break;
+    default:
+        $fokusProgramStudi = "Belum ditentukan";
+}
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -85,13 +85,34 @@ $fokusProgramStudi = "Sistem informasi dan proses bisnis";
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
-                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p> 
+                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
-                <h3>Target Belajar</h3>
+                <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
-                    <li>Memahami struktur HTML5.</li>
-                    <li>Menyusun halaman web semantik.</li>
-                    <li>Memvalidasi dokumen HTML.</li>
+                    <?php
+                    // Perulangan for tanpa array; materi larik dibahas pada P9. 
+                    for ($i = 1; $i <= 5; $i++) {
+                        echo "<li>Target belajar ke-" . $i . ": ";
+                        switch ($i) {
+                            case 1:
+                                echo "Memahami sintaks dasar PHP.";
+                                break;
+                            case 2:
+                                echo "Menggunakan variabel dan konstanta.";
+                                break;
+                            case 3:
+                                echo "Menerapkan operator dan percabangan.";
+                                break;
+                            case 4:
+                                echo "Menggunakan perulangan for dan while.";
+                                break;
+                            default:
+                                echo "Belum dipetakan";
+                                break;
+                        }
+                        echo "</li>";
+                    }
+                    ?>
                 </ol>
             </article>
         </section>
