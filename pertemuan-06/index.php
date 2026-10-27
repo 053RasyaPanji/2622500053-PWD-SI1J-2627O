@@ -9,8 +9,8 @@ $semester = 1;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
-const NAMA_MATA_KULIAH = "Pemrograman Web Dasar"; 
-const PROFIL_GITHUB = "Rasya Panji"; 
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
+const PROFIL_GITHUB = "053RasyaPanji";
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -43,7 +43,9 @@ const PROFIL_GITHUB = "Rasya Panji";
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya Rasya Panji Gustiansyah, dengan NIM 2622500053. Saya sedang mempelajari Pemrograman Web Dasar.
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah
+                <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik;
+                                                                                        ?>.
             </p>
             <img src="img/foto-profil.jpg.jpeg" width="100" height="140" alt="Foto profil Nama Mahasiswa">
         </section>
@@ -65,7 +67,10 @@ const PROFIL_GITHUB = "Rasya Panji";
 
         <section id="contact">
             <h2>Kontak</h2>
-            <p>Kunjungi <a href="https://github.com/053RasyaPanji">profil GitHub saya</a>.</p>
+            <p>
+                Kunjungi
+                <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+            </p>
             <form action="index.html" method="post">
                 <div class="form.group">
                     <label for="nama">Nama Lengkap</label><br>
