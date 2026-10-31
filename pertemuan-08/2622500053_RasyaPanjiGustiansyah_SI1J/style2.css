@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    background-color: #360546;
+    width: 200px;
+    min-height: 500px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #4a90c2;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+section h2 {
+    color: #1e3a5f;
+}
+
+section img {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+section p {
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.section-pendaftaran {
+    flex: 1;
+}
+
+.section-pendaftaran .content {
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#pendaftaran h2 {
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+.form-group p {
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+.input-form {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    border: 2px solid #ccd6e0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-form:focus {
+    outline: none;
+    border-color: #2c5282;
+    box-shadow: 0 0 5px rgba(44, 82, 130, 0.4);
+}
+
+textarea.input-form {
+    height: 120px;
+    resize: vertical;
+}
+
+
+input[type="radio"] {
+    accent-color: #2c5282;
+    margin: 6px 6px 6px 0;
+}
+
+input[type="radio"]+label {
+    font-weight: normal;
+    color: #333;
+}
+
+
+button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #2c5282;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e3a5f;
+}
+
+button[type="reset"] {
+    background-color: #e2e8f0;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #cbd5e0;
+}
