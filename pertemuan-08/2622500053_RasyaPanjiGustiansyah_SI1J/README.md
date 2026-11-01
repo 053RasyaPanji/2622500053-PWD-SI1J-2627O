@@ -20,3 +20,6 @@ Membuat web untuk UTS Semester Gasal 2026/2027
 - Menambahkan kode yang menghubungkan style.css ke file .php lainnya.
 - Menghapus kode "min" dan "max" pada file pendaftaran.php.
 - Menganalisis letak salah dan mengubah beberapa codingan lalu menyambungkan code untuk submit dengan code validasi di file blog.js
+
+Link Github [https://github.com/053RasyaPanji]
+Link Repository [https://github.com/053RasyaPanji/2622500053-PWD-SI1J-2627O/tree/main/pertemuan-08]
