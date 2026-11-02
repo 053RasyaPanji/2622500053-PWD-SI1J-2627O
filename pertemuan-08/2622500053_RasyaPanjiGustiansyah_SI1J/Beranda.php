@@ -16,7 +16,8 @@ $footer = "262250053_Rasya Panji Gustiansyah_SI1J_UTS Pemrograman Web Dasar";
 <body>
     <!--Ini header-->
     <header>
-        <img src="img/logoisbal.png" width="200" height="150" class="header-top">WEBSITE PRIBADI PANJI
+        <img src="img/logoisbal.png" width="200" height="150" class="header-top">
+        <h1>WEBSITE PRIBADI PANJI</h1>
     </header>
     <main>
         <!--Ini Navbar-->
