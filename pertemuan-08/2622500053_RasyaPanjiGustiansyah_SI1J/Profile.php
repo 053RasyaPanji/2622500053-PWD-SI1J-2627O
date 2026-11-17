@@ -11,7 +11,7 @@ $footer = "262250053_Rasya Panji Gustiansyah_SI1J_UTS Pemrograman Web Dasar";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <title>Tentang Panji</title>
 </head>
 
